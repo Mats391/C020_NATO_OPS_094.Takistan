@@ -45,13 +45,13 @@ class Mission
 		"alive_sys_playeroptions",
 		"alive_mil_cqb",
 		"alive_sys_weather",
-		"mohawk_skins",
 		"A3_Air_F_Heli_Heli_Transport_03",
 		"A3_Air_F_Beta_Heli_Attack_01",
 		"A3_Air_F_Heli_Light_01",
 		"A3_Supplies_F_Heli_Slingload",
 		"A3_Air_F_EPC_Plane_CAS_01",
-		"A3_Supplies_F_Heli_CargoNets"
+		"A3_Supplies_F_Heli_CargoNets",
+		"A3_Structures_F_Heli_Ind_AirPort"
 	};
 	addOnsAuto[]=
 	{
@@ -98,7 +98,8 @@ class Mission
 		"A3_Air_F_Beta_Heli_Attack_01",
 		"A3_Air_F_Heli_Light_01",
 		"A3_Supplies_F_Heli_Slingload",
-		"A3_Supplies_F_Heli_CargoNets"
+		"A3_Supplies_F_Heli_CargoNets",
+		"A3_Structures_F_Heli_Ind_AirPort"
 	};
 	randomSeed=11597462;
 	class Intel
@@ -2167,7 +2168,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="client";
+							value="server";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_locality_setting";
 						};
@@ -2765,7 +2766,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=201;
+		items=203;
 		class Item0
 		{
 			position[]={8086.6396,296.04001,2068.5156};
@@ -4614,6 +4615,23 @@ class Mission
 			id=252;
 			side="EMPTY";
 			vehicle="AGM_SandbagBarrier_Crate";
+			skill=0.60000002;
+		};
+		class Item201
+		{
+			position[]={8144.4028,296.04001,1958.3608};
+			id=253;
+			side="EMPTY";
+			vehicle="Windsock_01_F";
+			skill=0.60000002;
+		};
+		class Item202
+		{
+			position[]={8274.7051,304.96588,2083.8508};
+			offsetY=9;
+			id=254;
+			side="EMPTY";
+			vehicle="Windsock_01_F";
 			skill=0.60000002;
 		};
 	};

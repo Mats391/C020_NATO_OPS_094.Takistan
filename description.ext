@@ -7,7 +7,7 @@ class header {
 	playerCountMultipleOf = 1;  //Coop type missions use 1, Team type missions use 2
 };
 
-author = Colt&Mats391;
+author = Colt & Mats391;
 onLoadMission = "Iran has invaded Takistan in a sudden strike!. NATO OPS is to free Takistan of the Iranian forces!";
 onLoadIntroTime = false;
 onLoadMissionTime = false;
