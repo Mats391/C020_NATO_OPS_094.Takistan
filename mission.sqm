@@ -48,7 +48,8 @@ class Mission
 		"mohawk_skins",
 		"A3_Air_F_Heli_Heli_Transport_03",
 		"A3_Air_F_Beta_Heli_Attack_01",
-		"A3_Air_F_Heli_Light_01"
+		"A3_Air_F_Heli_Light_01",
+		"A3_Supplies_F_Heli_Slingload"
 	};
 	addOnsAuto[]=
 	{
@@ -93,7 +94,8 @@ class Mission
 		"A3_Structures_F_Mil_BagBunker",
 		"A3_Air_F_Heli_Heli_Transport_03",
 		"A3_Air_F_Beta_Heli_Attack_01",
-		"A3_Air_F_Heli_Light_01"
+		"A3_Air_F_Heli_Light_01",
+		"A3_Supplies_F_Heli_Slingload"
 	};
 	randomSeed=11597462;
 	class Intel
@@ -2842,7 +2844,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=201;
+		items=206;
 		class Item0
 		{
 			position[]={8086.6396,296.04001,2068.5156};
@@ -4707,6 +4709,47 @@ class Mission
 			init="[this] call m391_fnc_clearCargo;";
 			syncId=44;
 			synchronizations[]={38};
+		};
+		class Item201
+		{
+			position[]={8019.9746,296.04001,1939.1517};
+			id=254;
+			side="EMPTY";
+			vehicle="B_Slingload_01_Ammo_F";
+			skill=0.60000002;
+		};
+		class Item202
+		{
+			position[]={8023.436,296.04001,1935.524};
+			id=255;
+			side="EMPTY";
+			vehicle="B_Slingload_01_Cargo_F";
+			skill=0.60000002;
+		};
+		class Item203
+		{
+			position[]={8028.0503,296.04001,1932.7211};
+			id=256;
+			side="EMPTY";
+			vehicle="B_Slingload_01_Fuel_F";
+			skill=0.60000002;
+		};
+		class Item204
+		{
+			position[]={8031.5122,296.04001,1930.2489};
+			id=257;
+			side="EMPTY";
+			vehicle="B_Slingload_01_Medevac_F";
+			skill=0.60000002;
+			init="this setVariable [""AGM_IsMedic"", true];";
+		};
+		class Item205
+		{
+			position[]={8035.6338,296.04001,1927.9396};
+			id=258;
+			side="EMPTY";
+			vehicle="B_Slingload_01_Repair_F";
+			skill=0.60000002;
 		};
 	};
 	class Markers
