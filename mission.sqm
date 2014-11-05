@@ -51,7 +51,8 @@ class Mission
 		"A3_Supplies_F_Heli_Slingload",
 		"A3_Air_F_EPC_Plane_CAS_01",
 		"A3_Supplies_F_Heli_CargoNets",
-		"A3_Structures_F_Heli_Ind_AirPort"
+		"A3_Structures_F_Heli_Ind_AirPort",
+		"A3_Structures_F_Heli_Ind_Cargo"
 	};
 	addOnsAuto[]=
 	{
@@ -99,7 +100,8 @@ class Mission
 		"A3_Air_F_Heli_Light_01",
 		"A3_Supplies_F_Heli_Slingload",
 		"A3_Supplies_F_Heli_CargoNets",
-		"A3_Structures_F_Heli_Ind_AirPort"
+		"A3_Structures_F_Heli_Ind_AirPort",
+		"A3_Structures_F_Heli_Ind_Cargo"
 	};
 	randomSeed=11597462;
 	class Intel
@@ -2766,7 +2768,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=203;
+		items=204;
 		class Item0
 		{
 			position[]={8086.6396,296.04001,2068.5156};
@@ -4619,11 +4621,12 @@ class Mission
 		};
 		class Item201
 		{
-			position[]={8144.4028,296.04001,1958.3608};
+			position[]={8142.0688,296.04001,1956.5732};
 			id=253;
 			side="EMPTY";
 			vehicle="Windsock_01_F";
 			skill=0.60000002;
+			init="this attachTo [windhose_base, [0,0,3]];";
 		};
 		class Item202
 		{
@@ -4633,6 +4636,15 @@ class Mission
 			side="EMPTY";
 			vehicle="Windsock_01_F";
 			skill=0.60000002;
+		};
+		class Item203
+		{
+			position[]={8144.4673,296.04001,1954.1191};
+			id=255;
+			side="EMPTY";
+			vehicle="Land_Cargo10_military_green_F";
+			skill=0.60000002;
+			text="windhose_base";
 		};
 	};
 	class Markers
