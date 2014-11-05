@@ -1,11 +1,6 @@
 _unit = _this select 0;
 
-clearItemCargo _unit; 
-clearWeaponCargoGlobal _unit; 
-clearMagazineCargoGlobal _unit; 
-clearBackpackCargoGlobal _unit;
-
-private ["_item", "_i"];
+[_unit] call m391_fnc_clearCargo;
 
 waitUntil {!isNil "AGM_Logistics_loadedItemsDummy"};
 

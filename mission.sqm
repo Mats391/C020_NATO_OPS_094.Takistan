@@ -1695,7 +1695,7 @@ class Mission
 						};
 						class Item15
 						{
-							value="0.2";
+							value="0.1";
 							parentCls="ALiVE_MIL_C2ISTAR";
 							typeName="intelChance";
 						};
@@ -1748,7 +1748,7 @@ class Mission
 				class Item0
 				{
 					position[]={8137.1484,296.04001,2058.6978};
-					azimut=149.04802;
+					azimut=149.048;
 					class args
 					{
 						items=9;
@@ -1796,7 +1796,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="1";
+							value="0";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="ShowNotification";
 						};
@@ -2297,7 +2297,7 @@ class Mission
 				class Item0
 				{
 					position[]={8180.1577,296.04001,2081.4397};
-					azimut=149.04802;
+					azimut=149.048;
 					class args
 					{
 						items=9;
@@ -2345,7 +2345,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="1";
+							value="0";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="ShowNotification";
 						};
@@ -2775,7 +2775,7 @@ class Mission
 						items=9;
 						class Item0
 						{
-							value="300";
+							value="30";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="Delay";
 						};
@@ -2817,7 +2817,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="1";
+							value="0";
 							parentCls="ModuleRespawnVehicle_F";
 							typeName="ShowNotification";
 						};
@@ -2846,47 +2846,52 @@ class Mission
 		class Item0
 		{
 			position[]={8086.6396,296.04001,2068.5156};
-			azimut=-921.60034;
+			azimut=-921.59998;
 			id=53;
 			side="EMPTY";
 			vehicle="B_Truck_01_ammo_F";
 			skill=0.33333331;
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item1
 		{
 			position[]={8082.7017,296.04001,2066.6182};
-			azimut=-921.6004;
+			azimut=-921.59998;
 			id=54;
 			side="EMPTY";
 			vehicle="B_Truck_01_Repair_F";
 			skill=0.33333331;
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item2
 		{
 			position[]={8073.5781,296.04001,2060.9473};
-			azimut=-205.67502;
+			azimut=-205.675;
 			id=55;
 			side="EMPTY";
 			vehicle="B_Truck_01_transport_F";
 			skill=0.2;
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item3
 		{
 			position[]={8066.3877,296.03836,2057.2737};
-			azimut=-566.32422;
+			azimut=-566.32397;
 			id=56;
 			side="EMPTY";
 			vehicle="B_APC_Tracked_01_CRV_F";
 			skill=0.33333331;
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item4
 		{
 			position[]={8078.9731,296.04001,2064.5103};
-			azimut=-921.60034;
+			azimut=-921.59998;
 			id=57;
 			side="EMPTY";
 			vehicle="B_Truck_01_fuel_F";
 			skill=0.33333331;
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item5
 		{
@@ -2956,7 +2961,7 @@ class Mission
 			side="EMPTY";
 			vehicle="AGM_Box_Misc";
 			skill=0.2;
-			init="clearMagazineCargoGlobal this; this additemcargoGlobal [""toolkit"", 10]; ";
+			init="clearMagazineCargoGlobal this; this addItemCargoGlobal [""toolkit"", 10];";
 		};
 		class Item12
 		{
@@ -2966,7 +2971,7 @@ class Mission
 			side="EMPTY";
 			vehicle="AGM_Box_Misc";
 			skill=0.2;
-			init="clearMagazineCargoGlobal this; this additemcargoGlobal [""toolkit"", 10]; ";
+			init="clearMagazineCargoGlobal this; this addItemCargoGlobal [""toolkit"", 10];";
 		};
 		class Item13
 		{
@@ -3899,7 +3904,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MRAP_01_hmg_F";
 			skill=0.2;
-			init="clearItemCargo this;  clearWeaponCargoGlobal this;   clearMagazineCargoGlobal this;;";
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item116
 		{
@@ -3909,7 +3914,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MRAP_01_hmg_F";
 			skill=0.2;
-			init="clearItemCargo this;  clearWeaponCargoGlobal this;   clearMagazineCargoGlobal this;";
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item117
 		{
@@ -4196,7 +4201,7 @@ class Mission
 			side="EMPTY";
 			vehicle="AGM_Box_Misc";
 			skill=0.2;
-			init="clearMagazineCargoGlobal this; this additemcargoGlobal [""toolkit"", 10]; ";
+			init="clearMagazineCargoGlobal this; this addItemCargoGlobal [""toolkit"", 10];";
 		};
 		class Item148
 		{
@@ -4206,7 +4211,7 @@ class Mission
 			side="EMPTY";
 			vehicle="AGM_Box_Misc";
 			skill=0.2;
-			init="clearMagazineCargoGlobal this; this additemcargoGlobal [""toolkit"", 10]; ";
+			init="clearMagazineCargoGlobal this; this addItemCargoGlobal [""toolkit"", 10];";
 		};
 		class Item149
 		{
@@ -4216,7 +4221,7 @@ class Mission
 			side="EMPTY";
 			vehicle="AGM_Box_Misc";
 			skill=0.2;
-			init="clearMagazineCargoGlobal this; this additemcargoGlobal [""toolkit"", 10]; ";
+			init="clearMagazineCargoGlobal this; this addItemCargoGlobal [""toolkit"", 10];";
 		};
 		class Item150
 		{
@@ -4370,7 +4375,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MRAP_01_hmg_F";
 			skill=0.2;
-			init="clearItemCargo this;  clearWeaponCargoGlobal this;   clearMagazineCargoGlobal this;";
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item167
 		{
@@ -4380,7 +4385,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MRAP_01_hmg_F";
 			skill=0.2;
-			init="clearItemCargo this;  clearWeaponCargoGlobal this;   clearMagazineCargoGlobal this;";
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item168
 		{
@@ -4416,11 +4421,12 @@ class Mission
 		class Item171
 		{
 			position[]={8301.9941,296.04001,2013.7806};
-			azimut=-1058.2308;
+			azimut=-1058.23;
 			id=224;
 			side="EMPTY";
 			vehicle="B_Truck_01_fuel_F";
 			skill=0.33333331;
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item172
 		{
@@ -4620,7 +4626,7 @@ class Mission
 			vehicle="Box_NATO_WpsSpecial_F";
 			leader=1;
 			skill=0.60000002;
-			init="clearWeaponCargoGlobal this;  clearMagazineCargoGlobal this;  clearItemCargoGlobal this; this additemcargoGlobal [""optic_lrps"", 50]; this additemcargoGlobal [""optic_dms"", 50]; this additemCargoGlobal [""Laserdesignator"", 20]; this addMagazineCargoGlobal [""Laserbatteries"", 20];";
+			init="[this] call m391_fnc_clearCargo; this additemcargoGlobal [""optic_lrps"", 50]; this additemcargoGlobal [""optic_dms"", 50]; this additemCargoGlobal [""Laserdesignator"", 20]; this addMagazineCargoGlobal [""Laserbatteries"", 20];";
 		};
 		class Item194
 		{
@@ -4650,7 +4656,7 @@ class Mission
 			vehicle="Box_NATO_WpsSpecial_F";
 			leader=1;
 			skill=0.60000002;
-			init="clearWeaponCargoGlobal this;  clearMagazineCargoGlobal this;  clearItemCargoGlobal this; this addBackpackCargoGlobal [""B_UAV_01_backpack_f"", 20]; this addItemCargoGlobal [""B_UAVTerminal"", 20];";
+			init="[this] call m391_fnc_clearCargo; this addBackpackCargoGlobal [""B_UAV_01_backpack_f"", 20]; this addItemCargoGlobal [""B_UAVTerminal"", 20];";
 		};
 		class Item197
 		{
@@ -4661,7 +4667,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			leader=1;
 			skill=0.60000002;
-			init="clearWeaponCargoGlobal this;  clearMagazineCargoGlobal this;    clearItemCargoGlobal this; clearBackpackCargoGlobal this;  this addItemCargoGlobal [""AGM_Altimeter"", 20];  this addBackpackCargoGlobal [""B_Parachute"", 20];";
+			init="[this] call m391_fnc_clearCargo; this addItemCargoGlobal [""AGM_Altimeter"", 20];  this addBackpackCargoGlobal [""B_Parachute"", 20];";
 		};
 		class Item198
 		{
@@ -4672,6 +4678,7 @@ class Mission
 			vehicle="B_Heli_Transport_03_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this] call m391_fnc_clearCargo;";
 			syncId=42;
 			synchronizations[]={38};
 		};
@@ -4684,6 +4691,7 @@ class Mission
 			vehicle="B_Heli_Attack_01_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this] call m391_fnc_clearCargo;";
 			syncId=43;
 			synchronizations[]={38};
 		};
@@ -4696,6 +4704,7 @@ class Mission
 			vehicle="B_Heli_Light_01_armed_F";
 			leader=1;
 			skill=0.60000002;
+			init="[this] call m391_fnc_clearCargo;";
 			syncId=44;
 			synchronizations[]={38};
 		};
