@@ -4746,7 +4746,7 @@ class Mission
 			health=0.11937529;
 			fuel=0;
 			ammo=0;
-			init="this setHit [""wheel_1_1_steering"", 1]; this setHit [""wheel_1_2_steering"", 1]; this setHit [""wheel_1_3_steering"", 1]; this setHit [""wheel_2_1_steering"", 1]; this setHit [""wheel_2_2_steering"", 1];";
+			init="[this] call m391_fnc_clearCargo; this setHit [""wheel_1_1_steering"", 1]; this setHit [""wheel_1_2_steering"", 1]; this setHit [""wheel_1_3_steering"", 1]; this setHit [""wheel_2_1_steering"", 1]; this setHit [""wheel_2_2_steering"", 1];";
 		};
 		class Item205
 		{
@@ -4833,7 +4833,7 @@ class Mission
 			offsetY=1;
 			id=266;
 			side="EMPTY";
-			vehicle="B_Truck_01_medical_F";
+			vehicle="B_Slingload_01_Medevac_F";
 			skill=0.60000002;
 			init="this setVectorUp [0, 0.1, 0.01];";
 		};
