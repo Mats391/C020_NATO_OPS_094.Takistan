@@ -1117,7 +1117,7 @@ class Mission
 				class Item0
 				{
 					position[]={8252.2578,296.04001,2143.8579};
-					azimut=228.52124;
+					azimut=228.521;
 					id=14;
 					side="WEST";
 					vehicle="BWA3_TL_Tropen";
@@ -3622,7 +3622,7 @@ class Mission
 		};
 		class Item82
 		{
-			position[]={8181.3115,296.04001,1953.615};
+			position[]={8179.6606,296.04001,1953.8629};
 			azimut=326.85403;
 			id=135;
 			side="EMPTY";
