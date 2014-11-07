@@ -4332,7 +4332,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Slingload_01_Medevac_F";
 			skill=0.60000002;
-			init="this setVariable [""AGM_IsMedic"", true]; [this] call m391_fnc_clearCargo;";
+			init="[this] call m391_fnc_clearCargo;";
 		};
 		class Item167
 		{
@@ -4365,7 +4365,7 @@ class Mission
 		};
 		class Item170
 		{
-			position[]={8077.0981,296.04001,1885.2808};
+			position[]={8079.4121,296.04001,1882.9675};
 			azimut=330;
 			id=222;
 			side="EMPTY";
@@ -4375,7 +4375,7 @@ class Mission
 		};
 		class Item171
 		{
-			position[]={8080.627,296.04001,1880.4849};
+			position[]={8085.1606,296.04001,1874.4683};
 			azimut=330;
 			id=223;
 			side="EMPTY";
