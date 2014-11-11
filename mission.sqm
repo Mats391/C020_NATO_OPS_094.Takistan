@@ -55,7 +55,8 @@ class Mission
 		"A3_Structures_F_Heli_Ind_Cargo",
 		"A3_Air_F_Beta_Heli_Transport_01",
 		"A3_Air_F_Beta_Heli_Transport_02",
-		"A3_Air_F_Gamma_UAV_02"
+		"A3_Air_F_Gamma_UAV_02",
+		"A3_Modules_F"
 	};
 	addOnsAuto[]=
 	{
